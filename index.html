@@ -6,9 +6,44 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link href="index.css" rel="stylesheet">
+    <link href="login.css" rel="stylesheet">
 </head>
 <body>
     <div id="layout">
+        <!--弹出登录框按钮-->
+    <div id="login-header">
+            <a id="adminBtn">点击，弹出登录框</a>
+        </div>
+        <!--登录框主体-->
+        <div id="login" class="login">
+            <div id="login-title" class="login-title">
+                账号登录
+                <span><a id="closeBtn" href="javascript:void(0)">关闭</a></span>
+    
+            </div>
+            <!--登录框表单-->
+            <div id="login-form">
+                <div class="login-input">
+                    <label>登录名：</label>
+                    <input type="text" placeholder="手机号" class="list-input"/>
+                </div>
+                <div class="login-input">
+                        <label>密&nbsp;&nbsp;&nbsp;码：</label>
+                        <input type="password" placeholder="密码" class="list-input"/>
+                </div>
+    
+            </div>
+            <input type="submit" id="loginSubmit" value="登录" class="loginSubmit"/>
+            <div id="forget-pwd-box">
+                <a class="forget-pwd">忘记密码</a>
+                <span style="margin: 0 13px;">|</span>
+                <a class="register">立即注册</a>
+    
+            </div>
+        </div>
+        <!--遮盖层-->
+        <div id="bg" class="bg">sada</div>
+        <script type="text/javascript" src="login.js"></script>
         <header>
                 <div class="header-content">
                         <div  class="header-content-div1">    
@@ -33,8 +68,8 @@
                                 </div>
                             </span>
                             <div class="header-content-div4">
-                            <a href=""><img src="../icon_7rz6yy3o8i5/icon-test_3.svg" id="collection"></a>
-                            <a href=""><img src="../icon_7rz6yy3o8i5/denglu.svg"  id="person"></a>
+                            <a href=""><img src="/image/icon-test_3.svg" id="collection"></a>
+                            <a href=""><img src="/image/denglu.svg"  id="person" ></a>
                             </div>
                             <div class="header-content-div5"><I><span class="div5-span">全世界最好吃的</span></I></div>
                     </div>
@@ -464,6 +499,9 @@
         </footer>
 
     </div>
-  
+    <script type="text/javascript" src="login.js">
+    Login();
+    </script>
+    
 </body>
 </html>
